@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -name '*.html' -type f -exec sh -c 'for file; do [ ! -e ../"$file" ] || [ "$file" -nt ../"$file" ] && cp "$file" ../; done' sh {} +
+cp -un *.html ../
