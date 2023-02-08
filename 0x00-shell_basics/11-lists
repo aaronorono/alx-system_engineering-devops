@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -alh --author --group $(pwd) $(pwd)/.. /boot
+ls -alh --color=always --group-directories-first $(pwd)/.. /boot
