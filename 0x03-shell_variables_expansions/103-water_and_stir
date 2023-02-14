@@ -1,0 +1,6 @@
+#!/bin/bash
+water_decimal=$(echo "ibase=water; $WATER" | bc)
+stir_decimal=$(echo "ibase=stir; $STIR" | bc)
+result_decimal=$(expr $water_decimal + $stir_decimal)
+result_bestchol=$(echo "obase=bestchol; $result_decimal" | bc)
+echo "The sum of WATER ($WATER in base water) and STIR ($STIR in base stir) is $result_bestchol in base bestchol."
